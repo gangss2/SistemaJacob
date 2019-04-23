@@ -1,6 +1,6 @@
 package modeloAluno;
 
-public class aluno {
+public class Aluno {
 
     private String nome;
     private String curso;
@@ -8,16 +8,11 @@ public class aluno {
     private String disciplina;
     private String turma;
     private String nomePro;
-    private String nota1;
     private String numdoAluno;
+    private String nota1;
     private String nota2;
     private String nota3;
-   // private int apto;
-   
-
-  
-
-    
+    // private int apto;
 
     public String getNome() {
         return nome;
@@ -98,7 +93,5 @@ public class aluno {
     public void setNota3(String nota3) {
         this.nota3 = nota3;
     }
-
-   
 
 }

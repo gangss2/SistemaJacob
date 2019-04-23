@@ -249,7 +249,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_MenuAActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-        tabelaAlunos tabela = new tabelaAlunos();
+        TabelaAlunos tabela = new TabelaAlunos();
         fundo.add(tabela);
         tabela.setVisible(true);
     }//GEN-LAST:event_jMenuItem5ActionPerformed

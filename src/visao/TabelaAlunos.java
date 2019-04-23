@@ -5,10 +5,10 @@ import ControleAluno.txt;
 import java.util.Locale;
 
 
-public class tabelaAlunos extends javax.swing.JInternalFrame {
+public class TabelaAlunos extends javax.swing.JInternalFrame {
 
     
-    public tabelaAlunos() {
+    public TabelaAlunos() {
         initComponents();
         setDefaultLocale(Locale.UK);
         ControleAluno.Aluno.TabelaA(tabela1, txt.listaAluno);

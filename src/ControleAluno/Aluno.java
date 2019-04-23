@@ -2,7 +2,6 @@ package ControleAluno;
 
 import static ControleAluno.txt.listaAluno;
 import java.util.List;
-import modeloAluno.aluno;
 import visao.TelaAluno;
 import javax.swing.JOptionPane;
 import javax.swing.JTable; 
@@ -13,12 +12,12 @@ public class Aluno {
 
    static TelaAluno b;
    
-       public static void TabelaA(JTable tabela, List<aluno> ListaAluno) {
+       public static void TabelaA(JTable tabela, List<modeloAluno.Aluno> ListaAluno) {
         DefaultTableModel dtm = (DefaultTableModel) tabela.getModel();
         dtm.setRowCount(ListaAluno.size());
         tabela.setModel(dtm);
         int linha = 0;
-        for (aluno a : ListaAluno) {
+        for (modeloAluno.Aluno a : ListaAluno) {
             tabela.setValueAt(a.getNome(), linha, 0);
             tabela.setValueAt(a.getNomePro(), linha, 1);
             tabela.setValueAt(a.getNumdoAluno(), linha, 2);
@@ -38,7 +37,7 @@ public class Aluno {
 
     public static void adicionarAluno(String nome, String nomePro, String numdoAluno, String turma, String sala,
              String curso, String disciplina, String nota1, String nota2, String nota3) {
-         aluno alun = new aluno();
+         modeloAluno.Aluno alun = new modeloAluno.Aluno();
          alun.setNome(nome);
          alun.setNomePro(nomePro);
          alun.setNumdoAluno(numdoAluno);
